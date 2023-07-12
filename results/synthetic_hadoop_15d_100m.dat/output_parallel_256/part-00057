@@ -1,0 +1,43 @@
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+	
+2 beta-clusters were found.	
+	
+2 correlation clusters left after the merging fase.	
+bounds for beta-cluster 0	
+	dimension 0: min, 0.536558 max, 0.545351
+	dimension 1: min, 0.333494 max, 0.427941
+	dimension 2: min, 0.222484 max, 0.290930
+	dimension 3: min, 0.513258 max, 0.585793
+	dimension 4: min, 0.414072 max, 0.617225
+	dimension 5: min, 0.517585 max, 0.586131
+	dimension 6: min, 0.021146 max, 0.086412
+	dimension 7: min, 0.184603 max, 0.186830
+	dimension 8: min, 0.966298 max, 1.002987
+	dimension 9: min, 0.005808 max, 0.040007
+	dimension 10: min, 0.562148 max, 0.596480
+	dimension 11: min, 0.462205 max, 0.492789
+	dimension 12: min, 0.818985 max, 0.922704
+	dimension 13: min, 0.651329 max, 0.670882
+	dimension 14: min, 0.351920 max, 0.365718
+end of description	
+	
+bounds for beta-cluster 1	
+	dimension 0: min, 0.540955 max, 0.543153
+	dimension 1: min, 0.380717 max, 0.427941
+	dimension 2: min, 0.222484 max, 0.290930
+	dimension 3: min, 0.537436 max, 0.585793
+	dimension 4: min, 0.515648 max, 0.566437
+	dimension 5: min, 0.483312 max, 0.551858
+	dimension 6: min, 0.021146 max, 0.086412
+	dimension 7: min, 0.184603 max, 0.186830
+	dimension 8: min, 0.975470 max, 1.002987
+	dimension 9: min, 0.017208 max, 0.028607
+	dimension 10: min, 0.562148 max, 0.596480
+	dimension 11: min, 0.462205 max, 0.477497
+	dimension 12: min, 0.818985 max, 0.922704
+	dimension 13: min, 0.651329 max, 0.670882
+	dimension 14: min, 0.358819 max, 0.362268
+end of description	
+	
+Elapsed time: 9.320 sec.	

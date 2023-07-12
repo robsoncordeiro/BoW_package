@@ -1,0 +1,62 @@
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+	
+3 beta-clusters were found.	
+	
+3 correlation clusters left after the merging fase.	
+bounds for beta-cluster 0	
+	dimension 0: min, 0.536690 max, 0.600251
+	dimension 1: min, 0.024962 max, 0.468795
+	dimension 2: min, 0.105226 max, 0.316296
+	dimension 3: min, 0.511658 max, 0.614211
+	dimension 4: min, 0.078939 max, 0.628115
+	dimension 5: min, 0.461946 max, 0.615842
+	dimension 6: min, -0.004210 max, 0.241582
+	dimension 7: min, 0.183619 max, 0.321779
+	dimension 8: min, 0.883991 max, 1.002992
+	dimension 9: min, -0.004269 max, 0.042309
+	dimension 10: min, 0.494192 max, 0.617274
+	dimension 11: min, 0.445860 max, 0.522551
+	dimension 12: min, 0.612213 max, 0.969395
+	dimension 13: min, 0.550307 max, 0.680660
+	dimension 14: min, 0.351927 max, 0.400096
+end of description	
+	
+bounds for beta-cluster 1	
+	dimension 0: min, 0.536690 max, 0.790935
+	dimension 1: min, 0.024962 max, 0.135920
+	dimension 2: min, 0.105226 max, 0.316296
+	dimension 3: min, 0.511658 max, 0.921872
+	dimension 4: min, 0.078939 max, 0.216233
+	dimension 5: min, 0.000258 max, 0.308050
+	dimension 6: min, 0.733166 max, 0.978958
+	dimension 7: min, 0.598100 max, 0.736260
+	dimension 8: min, 0.526987 max, 0.764989
+	dimension 9: min, -0.004269 max, 0.042309
+	dimension 10: min, 0.124944 max, 0.617274
+	dimension 11: min, 0.445860 max, 0.752622
+	dimension 12: min, 0.255031 max, 0.433622
+	dimension 13: min, 0.159247 max, 0.419953
+	dimension 14: min, 0.496434 max, 0.544603
+end of description	
+	
+bounds for beta-cluster 2	
+	dimension 0: min, 0.536690 max, 0.790935
+	dimension 1: min, 0.024962 max, 0.468795
+	dimension 2: min, 0.105226 max, 0.316296
+	dimension 3: min, 0.511658 max, 0.921872
+	dimension 4: min, 0.078939 max, 0.216233
+	dimension 5: min, 0.000258 max, 0.154154
+	dimension 6: min, 0.733166 max, 0.978958
+	dimension 7: min, 0.598100 max, 0.736260
+	dimension 8: min, 0.526987 max, 0.645988
+	dimension 9: min, -0.004269 max, 0.042309
+	dimension 10: min, 0.124944 max, 0.617274
+	dimension 11: min, 0.445860 max, 0.752622
+	dimension 12: min, 0.255031 max, 0.433622
+	dimension 13: min, 0.159247 max, 0.680660
+	dimension 14: min, 0.496434 max, 0.544603
+end of description	
+	
+Elapsed time: 7.120 sec.	

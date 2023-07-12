@@ -1,0 +1,252 @@
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+a beta-cluster was found at the Counting-tree level 1.	
+	
+13 beta-clusters were found.	
+	
+13 correlation clusters left after the merging fase.	
+bounds for beta-cluster 0	
+	dimension 0: min, 0.303580 max, 0.473536
+	dimension 1: min, 0.684895 max, 0.849260
+	dimension 2: min, 0.523072 max, 0.676924
+	dimension 3: min, 0.401398 max, 0.453634
+	dimension 4: min, 0.614240 max, 0.769873
+	dimension 5: min, 0.329349 max, 0.424937
+	dimension 6: min, 0.040485 max, 0.229471
+	dimension 7: min, 0.256263 max, 0.416381
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.138385 max, 0.168552
+	dimension 10: min, 0.651088 max, 0.682383
+	dimension 11: min, 0.626837 max, 0.816608
+	dimension 12: min, 0.814126 max, 0.893536
+	dimension 13: min, 0.598894 max, 0.775211
+	dimension 14: min, 0.446438 max, 0.506303
+end of description	
+	
+bounds for beta-cluster 1	
+	dimension 0: min, 0.360232 max, 0.416884
+	dimension 1: min, 0.739683 max, 0.794471
+	dimension 2: min, 0.599998 max, 0.638461
+	dimension 3: min, 0.414457 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.281555 max, 0.472731
+	dimension 6: min, 0.103481 max, 0.166476
+	dimension 7: min, 0.256263 max, 0.363008
+	dimension 8: min, 0.250000 max, 0.750000
+	dimension 9: min, 0.153469 max, 0.161010
+	dimension 10: min, 0.658912 max, 0.666735
+	dimension 11: min, 0.674280 max, 0.721723
+	dimension 12: min, 0.814126 max, 0.893536
+	dimension 13: min, 0.642973 max, 0.731132
+	dimension 14: min, 0.461404 max, 0.491337
+end of description	
+	
+bounds for beta-cluster 2	
+	dimension 0: min, 0.360232 max, 0.416884
+	dimension 1: min, 0.739683 max, 0.849260
+	dimension 2: min, 0.599998 max, 0.638461
+	dimension 3: min, 0.427516 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.769873
+	dimension 5: min, 0.281555 max, 0.472731
+	dimension 6: min, 0.103481 max, 0.229471
+	dimension 7: min, 0.309636 max, 0.363008
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.145927 max, 0.161010
+	dimension 10: min, 0.651088 max, 0.682383
+	dimension 11: min, 0.674280 max, 0.721723
+	dimension 12: min, 0.814126 max, 0.853831
+	dimension 13: min, 0.598894 max, 0.775211
+	dimension 14: min, 0.461404 max, 0.491337
+end of description	
+	
+bounds for beta-cluster 3	
+	dimension 0: min, 0.303580 max, 0.530188
+	dimension 1: min, 0.684895 max, 0.904048
+	dimension 2: min, 0.561535 max, 0.638461
+	dimension 3: min, 0.427516 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.281555 max, 0.472731
+	dimension 6: min, 0.103481 max, 0.166476
+	dimension 7: min, 0.309636 max, 0.363008
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.153469 max, 0.161010
+	dimension 10: min, 0.658912 max, 0.666735
+	dimension 11: min, 0.721723 max, 0.769165
+	dimension 12: min, 0.814126 max, 0.853831
+	dimension 13: min, 0.598894 max, 0.775211
+	dimension 14: min, 0.461404 max, 0.476370
+end of description	
+	
+bounds for beta-cluster 4	
+	dimension 0: min, 0.360232 max, 0.416884
+	dimension 1: min, 0.739683 max, 0.794471
+	dimension 2: min, 0.599998 max, 0.638461
+	dimension 3: min, 0.427516 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.329349 max, 0.377143
+	dimension 6: min, 0.166476 max, 0.229471
+	dimension 7: min, 0.256263 max, 0.309636
+	dimension 8: min, 0.250000 max, 0.500000
+	dimension 9: min, 0.153469 max, 0.161010
+	dimension 10: min, 0.658912 max, 0.666735
+	dimension 11: min, 0.674280 max, 0.721723
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.642973 max, 0.687053
+	dimension 14: min, 0.461404 max, 0.476370
+end of description	
+	
+bounds for beta-cluster 5	
+	dimension 0: min, 0.360232 max, 0.473536
+	dimension 1: min, 0.794471 max, 0.849260
+	dimension 2: min, 0.561535 max, 0.599998
+	dimension 3: min, 0.414457 max, 0.427516
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.329349 max, 0.377143
+	dimension 6: min, 0.166476 max, 0.229471
+	dimension 7: min, 0.309636 max, 0.363008
+	dimension 8: min, 0.750000 max, 1.000000
+	dimension 9: min, 0.145927 max, 0.153469
+	dimension 10: min, 0.658912 max, 0.666735
+	dimension 11: min, 0.674280 max, 0.769165
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.642973 max, 0.687053
+	dimension 14: min, 0.476370 max, 0.491337
+end of description	
+	
+bounds for beta-cluster 6	
+	dimension 0: min, 0.303580 max, 0.530188
+	dimension 1: min, 0.684895 max, 0.794471
+	dimension 2: min, 0.523072 max, 0.676924
+	dimension 3: min, 0.427516 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.281555 max, 0.472731
+	dimension 6: min, 0.103481 max, 0.229471
+	dimension 7: min, 0.309636 max, 0.363008
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.145927 max, 0.153469
+	dimension 10: min, 0.651088 max, 0.682383
+	dimension 11: min, 0.626837 max, 0.816608
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.687053 max, 0.731132
+	dimension 14: min, 0.476370 max, 0.491337
+end of description	
+	
+bounds for beta-cluster 7	
+	dimension 0: min, 0.360232 max, 0.416884
+	dimension 1: min, 0.739683 max, 0.794471
+	dimension 2: min, 0.561535 max, 0.638461
+	dimension 3: min, 0.427516 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.329349 max, 0.424937
+	dimension 6: min, 0.166476 max, 0.229471
+	dimension 7: min, 0.309636 max, 0.363008
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.145927 max, 0.153469
+	dimension 10: min, 0.651088 max, 0.682383
+	dimension 11: min, 0.721723 max, 0.769165
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.642973 max, 0.687053
+	dimension 14: min, 0.476370 max, 0.491337
+end of description	
+	
+bounds for beta-cluster 8	
+	dimension 0: min, 0.360232 max, 0.416884
+	dimension 1: min, 0.739683 max, 0.794471
+	dimension 2: min, 0.523072 max, 0.676924
+	dimension 3: min, 0.401398 max, 0.453634
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.281555 max, 0.472731
+	dimension 6: min, 0.103481 max, 0.166476
+	dimension 7: min, 0.202890 max, 0.416381
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.138385 max, 0.168552
+	dimension 10: min, 0.651088 max, 0.682383
+	dimension 11: min, 0.674280 max, 0.721723
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.687053 max, 0.731132
+	dimension 14: min, 0.446438 max, 0.506303
+end of description	
+	
+bounds for beta-cluster 9	
+	dimension 0: min, 0.360232 max, 0.473536
+	dimension 1: min, 0.684895 max, 0.904048
+	dimension 2: min, 0.599998 max, 0.638461
+	dimension 3: min, 0.427516 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.281555 max, 0.472731
+	dimension 6: min, 0.103481 max, 0.166476
+	dimension 7: min, 0.202890 max, 0.416381
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.145927 max, 0.153469
+	dimension 10: min, 0.658912 max, 0.666735
+	dimension 11: min, 0.674280 max, 0.721723
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.598894 max, 0.775211
+	dimension 14: min, 0.446438 max, 0.506303
+end of description	
+	
+bounds for beta-cluster 10	
+	dimension 0: min, 0.360232 max, 0.416884
+	dimension 1: min, 0.684895 max, 0.904048
+	dimension 2: min, 0.523072 max, 0.676924
+	dimension 3: min, 0.401398 max, 0.453634
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.329349 max, 0.377143
+	dimension 6: min, 0.103481 max, 0.166476
+	dimension 7: min, 0.202890 max, 0.416381
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.138385 max, 0.168552
+	dimension 10: min, 0.651088 max, 0.682383
+	dimension 11: min, 0.626837 max, 0.816608
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.598894 max, 0.775211
+	dimension 14: min, 0.446438 max, 0.506303
+end of description	
+	
+bounds for beta-cluster 11	
+	dimension 0: min, 0.360232 max, 0.473536
+	dimension 1: min, 0.739683 max, 0.794471
+	dimension 2: min, 0.523072 max, 0.676924
+	dimension 3: min, 0.427516 max, 0.440575
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.329349 max, 0.377143
+	dimension 6: min, 0.040485 max, 0.292467
+	dimension 7: min, 0.202890 max, 0.416381
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.138385 max, 0.168552
+	dimension 10: min, 0.658912 max, 0.674559
+	dimension 11: min, 0.674280 max, 0.721723
+	dimension 12: min, 0.774421 max, 0.933241
+	dimension 13: min, 0.642973 max, 0.731132
+	dimension 14: min, 0.461404 max, 0.476370
+end of description	
+	
+bounds for beta-cluster 12	
+	dimension 0: min, 0.303580 max, 0.530188
+	dimension 1: min, 0.684895 max, 0.849260
+	dimension 2: min, 0.599998 max, 0.638461
+	dimension 3: min, 0.401398 max, 0.453634
+	dimension 4: min, 0.666118 max, 0.717996
+	dimension 5: min, 0.281555 max, 0.472731
+	dimension 6: min, 0.103481 max, 0.166476
+	dimension 7: min, 0.309636 max, 0.363008
+	dimension 8: min, 0.000000 max, 1.000000
+	dimension 9: min, 0.138385 max, 0.168552
+	dimension 10: min, 0.658912 max, 0.666735
+	dimension 11: min, 0.674280 max, 0.769165
+	dimension 12: min, 0.814126 max, 0.853831
+	dimension 13: min, 0.642973 max, 0.687053
+	dimension 14: min, 0.446438 max, 0.506303
+end of description	
+	
+Elapsed time: 10.880 sec.	

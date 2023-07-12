@@ -1,0 +1,24 @@
+a beta-cluster was found at the Counting-tree level 1.	
+	
+1 beta-clusters were found.	
+	
+1 correlation clusters left after the merging fase.	
+bounds for beta-cluster 0	
+	dimension 0: min, 0.347262 max, 0.525046
+	dimension 1: min, 0.683636 max, 0.896254
+	dimension 2: min, 0.527441 max, 0.677104
+	dimension 3: min, 0.403708 max, 0.453707
+	dimension 4: min, 0.598102 max, 0.807257
+	dimension 5: min, 0.280456 max, 0.471203
+	dimension 6: min, 0.051182 max, 0.276160
+	dimension 7: min, 0.219749 max, 0.415514
+	dimension 8: min, 0.000001 max, 0.999998
+	dimension 9: min, 0.145741 max, 0.159465
+	dimension 10: min, 0.650975 max, 0.682531
+	dimension 11: min, 0.623121 max, 0.808880
+	dimension 12: min, 0.767279 max, 0.925303
+	dimension 13: min, 0.589220 max, 0.780804
+	dimension 14: min, 0.460472 max, 0.489416
+end of description	
+	
+Elapsed time: 9.850 sec.	

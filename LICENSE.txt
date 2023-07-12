@@ -1,0 +1,12 @@
+
+
+
+    BoW
+    Copyright (c) 2011
+    Robson L. F. Cordeiro, Caetano Traina Jr., Agma J. M. Traina, Julio López, U Kang and Christos Faloutsos
+    All Rights Reserved
+
+
+
+You may use this code without fee, for educational and research purposes.
+Any for-profit use requires written consent of the copyright holders.

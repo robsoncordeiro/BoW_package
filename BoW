@@ -1,0 +1,132 @@
+# system configuration
+hadoop_bin=hadoop # path to the hadoop executable
+base_path=/h/robsonc/BoW_package # complete path to the 'BoW_package' folder
+m=700 # number of mappers to be used (set with the number automaticaly defined by Hadoop)
+r=256 # number of reducers to be used
+Sr=0.01 # sampling ratio for SnI
+
+# dataset configuration
+dataset=synthetic_hadoop_15d_100m.dat # dataset name
+dimensionality=15 # dataset dimensionality
+size=100000000 # dataset size (total number of points)
+input=synthetic/$dataset/ # complete path in the HDFS file system to the data files
+
+# cost estimation - environmental parameters (the default values refer to the Yahoo! M45 machines and to the MrCC plug-in)
+Fs=14589909946 # data file size in bytes
+Ds=`echo "40 * 1024 * 1024" | bc` # disk speed (bytes/sec.) - set to 40MB/sec. in this case
+Ns=`echo "20 * 1024 * 1024" | bc` # network speed (bytes/sec.) - set to 20MB/sec. in this case
+Sc=0.1 # start up cost per MapReduce task - start_up_cost(t) = Sc * t
+Pc=0.000000143823 # plug-in cost in seconds per byte to be processed - plug_in_cost(s) = Pc * s
+
+# cost estimation - other parameters (the default values refer to our recommendation)
+Dr=0.5 # dispersion ratio
+Rr=0.1 # reduction ratio
+
+# initial wall-clock time meassurement
+initialTime="$(date +%s)"
+
+# cost estimation - estimated cost for ParC
+costC=`echo "($Sc*$m) + (($Fs/$m)*(1/$Ds)) + ((($Fs*$Dr)/$r)*(1/$Ns)) + ($Sc*$r) + (($Fs/$r)*(1/$Ds)) + ($Pc*($Fs/$r))" | bc -l`
+
+# cost estimation - estimated cost for SnI
+costCs=`echo "($Sc*$m) + (($Fs/$m)*(1/$Ds)) + (($Fs*$Dr*$Sr)/$Ns) + $Sc + (($Fs*$Sr)/$Ds) + ($Pc*($Fs*$Sr)) + ($Sc*$m) + (($Fs/$m)*(1/$Ds)) + ((($Fs*$Dr*$Rr)/$r)*(1/$Ns)) + ($Sc*$r) + ((($Fs*$Rr)/$r)*(1/$Ds)) + ($Pc*(($Fs*$Rr)/$r))" | bc -l`
+
+echo The expected cost for ParC is $costC seconds.
+echo The expected cost for SnI is $costCs seconds.
+
+if [ "`echo "$costC <= $costCs" | bc -l`" -eq 1 ]; then
+	# ParC is expected to be the fastest option for this configuration
+    echo "Running ParC on dataset $dataset using $r reducers."
+
+	cd $base_path/ParC
+    make spotless
+    make
+	
+	rm -f dimensionality
+    echo $dimensionality > dimensionality
+    rm -f size
+    echo $size > size
+    rm -f divisions
+    echo $r > divisions					
+	
+    $hadoop_bin fs -rmr ParC
+    $hadoop_bin fs -mkdir ParC
+	
+    rm -r -f ../results/$dataset
+    mkdir ../results/$dataset	
+    mkdir ../results/$dataset/output_parallel_$r
+    			
+    $hadoop_bin jar ../myHadoopStreaming.jar -D mapred.task.timeout=0 -mapper mapper -reducer reducer -partitioner org.apache.hadoop.myClasses.myPartitioner -file mapper -file reducer -file dimensionality -file size -file divisions -file parameters -input $input -output ParC/output/ -numReduceTasks $r
+
+    $hadoop_bin fs -get ParC/output/* ../results/$dataset/output_parallel_$r/
+    $hadoop_bin fs -rmr ParC		
+	
+	# merge
+    rm -f $base_path/merge
+    g++ -m64 $base_path/merge.cpp -o $base_path/merge
+	$base_path/merge ../results/$dataset/output_parallel_$r/ $r 0 $dimensionality
+else 
+    # SnI is expected to be the fastest option for this configuration
+    echo "Running SnI on dataset $dataset using $r reducers."
+    
+	sampleSize=`echo "$size*$Sr" | bc -l` # target size for the data sample
+    sampleSize=`echo $sampleSize | awk -F. '{print $1}'` # truncate
+
+    cd $base_path/SnI
+    make spotless
+    make
+  
+    rm -f dimensionality
+    echo $dimensionality > dimensionality
+    rm -f size
+    echo $size > size
+	
+    $hadoop_bin fs -rmr SnI
+    $hadoop_bin fs -mkdir SnI
+
+    rm -r -f ../results/$dataset
+    mkdir ../results/$dataset
+    mkdir ../results/$dataset/output_parallel_$r
+			
+    echo SnI - Phase 1: Looking for clusters in a sample of around $sampleSize points.
+    rm -f sample
+    echo $sampleSize > sample
+    rm -f divisions
+    echo 1 > divisions
+
+    $hadoop_bin jar ../myHadoopStreaming.jar -D mapred.task.timeout=0 -mapper mapper -reducer reducer -partitioner org.apache.hadoop.myClasses.myPartitioner -file mapper -file reducer -file dimensionality -file size -file divisions -file parameters -file sample -input $input -output SnI/output/ -numReduceTasks 1
+
+    $hadoop_bin fs -get SnI/output/* ../results/$dataset/output_parallel_$r/
+    $hadoop_bin fs -rmr SnI/output
+    cp  ../results/$dataset/output_parallel_$r/part-00000  ../results/$dataset/output_parallel_$r/part-00000-sample
+    mv -f  ../results/$dataset/output_parallel_$r/part-00000 $base_path/SnI
+
+    echo SnI - Phase 2: Looking for clusters not found in the sample.
+    rm -f sample
+    echo $size > sample
+    rm -f divisions
+    echo $r  > divisions
+
+    $hadoop_bin jar ../myHadoopStreaming.jar -D mapred.task.timeout=0 -mapper mapper -reducer reducer -partitioner org.apache.hadoop.myClasses.myPartitioner -file mapper -file reducer -file dimensionality -file size -file divisions -file parameters -file sample -file part-00000 -input $input -output SnI/output/ -numReduceTasks $r
+
+    $hadoop_bin fs -get SnI/output/* ../results/$dataset/output_parallel_$r/
+    $hadoop_bin fs -rmr SnI
+	
+	# merge
+    rm -f $base_path/merge
+    g++ -m64 $base_path/merge.cpp -o $base_path/merge
+	$base_path/merge ../results/$dataset/output_parallel_$r/ $r 1 $dimensionality
+fi
+
+# final wall-clock time meassurement
+totalTime=`echo "$(date +%s) - $initialTime" | bc -l`
+echo $totalTime > ../results/$dataset/output_parallel_$r/time
+
+#cleanup
+make spotless
+rm -f dimensionality
+rm -f size
+rm -f divisions
+rm -f sample
+rm -f part-00000
+rm -f $base_path/merge
